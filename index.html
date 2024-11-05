@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggajian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="container">
+    <div class="List">
+    <h1>List jam kerja karyawan</h1>
+    <br>
+    <h2>1 jam : Rp 20.000</h2>
+    <h2>2 jam : Rp 42.000</h2>
+    <h2>3 jam : Rp 69.000</h2>
+    <h2>4 jam : Rp 92.000</h2>
+    <h2>5 jam : Rp 114.000</h2>
+    <h2>6 jam : Rp 136.000</h2>
+    <h2>Lembur : Rp 15.000 / jam</h2>
+  </div> 
+  <hr>
+    <div class="fill">
+        <span>
+            <label for="">Nama Karyawan </label>
+            <span>
+                <p class="dot">:</p>
+                <input type="text" class="name">
+            </span>
+        </span>
+        <br>
+        <span>
+            <label>Jam Kerja </label>
+            <span>
+                <p class="dot">:</p>
+                <input type="number" min="0" max="6" class="inputJam">
+            </span>
+        </span>
+        <br>
+        <span>
+            <label>Jam Lembur </label>
+            <span>
+                <p class="dot">:</p>
+                <input type="number" min="0" max="6" class="inputLembur">
+            </span>
+        </span>
+        <br>
+        <label class="namaKaryawan">Nama karyawan :</label>
+        <label class="gaji">Gaji : Rp0,00</label>
+        <button onclick="submit()" class="btn">add</button>
+    </div>
+    <hr>
+    <div>
+        <label class="total-gaji">Total gaji : Rp0,00</label>
+        <br>
+        <button class="btn" onclick="bayar()">Bayar</button>
+        <div>
+            <br>
+            <h1>list-karyawan</h1>
+            <div class="list-karyawan"></div>
+        </div>
+    </div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
